@@ -4,7 +4,7 @@ interface ContentProps {
   genresTitle: {
     title: string;
   };
-  movieProperty: [
+  movieProperty: Array<
     {
       imdbID: string;
       Title: string;
@@ -15,7 +15,7 @@ interface ContentProps {
       }>;
       Runtime: string;
     }
-  ]
+  >
 }
 export function Content({ genresTitle, movieProperty }: ContentProps) {
 

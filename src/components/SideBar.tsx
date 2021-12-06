@@ -1,13 +1,13 @@
 import { Button } from "./Button";
 
 interface GenresProps {
-  genres: [
+  genres: Array<
     {
       id: number;
       name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
       title: string;
     }
-  ],
+  >,
   selectById: number;
   setSelectedGenreId: (id: number) => void;
 
